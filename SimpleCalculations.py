@@ -1,10 +1,7 @@
 # Your name: Paulo Maia
 
-# Don't forget to create all required functions
-
-
 # Create function called main()
-# This functions controls the flow of the program
+# This function controls the flow of the program
 def main():
   # Calls the function
   # Assign the function to variables InputNum1 and InputNum2
@@ -27,20 +24,20 @@ def main():
   # Calls the function, passes the variable IntputNum1 and InputNum2
   # Return a new variable
   answerExo = exponent(InputNum1, InputNum2)
-  # Calls the function, passes the 9 variables to function userOutput()
+  # Calls the function, passes the nine variables to function userOutput()
   userOutput(InputNum1, InputNum2, answerSum, answerSub, answerMult, answerDiv,
              answerMon, answerExo)
 
 
-#Create function called userInput
-# This functions will ask user to enter two numbers.
+#Create function called user-input
+# This function will ask the user to enter two numbers.
 def userInput():
   # Display on a screen
-  # Accept input from input, convert input to float
+  # Accept input from input, convert the input to float
   # Assign float to variable Num1
   Num1 = float(input('Enter your first number: '))
   # Display on a screen
-  # Accept input from input, convert input to float
+  # Accept input from input, convert the input to float
   # Assign float to variable Num2
   Num2 = float(input('Enter your second number: '))
   # return the
@@ -48,10 +45,10 @@ def userInput():
 
 
 # Create a function called add()
-# This fucnction will accept the two numbers and return the sum
+# This function will accept the two numbers and return the sum
 def add(n1, n2):
   # Take the two numbers and add them
-  # Assign the sum to variable Sum
+  # Assign the sum to the variable Sum
   Sum = n1 + n2
   # Convert the integer to a float
   # Assign float to variable An1
@@ -61,9 +58,9 @@ def add(n1, n2):
 
 
 # Create a function called subtract()
-# This fucnction will accept the two numbers and return the difference between them
+# This function will accept the two numbers and return the difference between them
 def subtract(n1, n2):
-  # Take the two integers and substract them
+  # Take the two integers and subtract them
   # Assign integer to diff
   diff = n1 - n2
   # Convert integer to float
@@ -74,7 +71,7 @@ def subtract(n1, n2):
 
 
 # Create a function called multiply()
-# This fucnction will accept the two numbers and return the product
+# This function will accept the two numbers and return the product
 def multiply(n1, n2):
   # Take the two integers and multiply them
   # Assign integer to Mult
@@ -87,7 +84,7 @@ def multiply(n1, n2):
   # Create a function called divide()
 
 
-# This fucnction will accept the two numbers and return the quotient
+# This function will accept the two numbers and return the quotient
 def divide(n1, n2):
   # Use try to watch code for errors
   try:
@@ -98,12 +95,12 @@ def divide(n1, n2):
     return Div
     # Expection to run if code blocks throws an error
   except:
-    # Error shown to user
+    # Error is shown to the user
     return ('cannot divide by zero')
 
 
 # Create a function called modulo()
-# This fucnction will accept the two numbers and returns the mondulo
+# This function will accept the two numbers and return the modulo
 def modulo(n1, n2):
   # Use try to watch code for errors
   try:
@@ -112,16 +109,16 @@ def modulo(n1, n2):
     # Convert the integer to float
     # Assign the float to variable An5
     An5 = float(Mon)
-    # return the mondulo
+    # return the modulo
     return An5
     # Expection to run if code blocks throws an error
   except:
-    # Error shown to user
+    # Error is shown to the user
     return ('cannot divide by zero')
 
 
 # Create a function called exponent()
-# This fucnction will accept the two numbers and returns the first number raise to the power of the second number
+# This function will accept the two numbers and return the first number raised to the power of the second number
 def exponent(n1, n2):
   # Take the first integer and raise it to the power of the second integer
   # Assign the integer to variable Exo
@@ -150,12 +147,6 @@ def userOutput(num1, num2, a1, a2, a3, a4, a5, a6):
   print(num1, '**', num2, '=', a6)
 
 
-# Put all of your code ABOVE this block of code
-# This next code block MUST be at the very bottom of your program.
-# Leave everthing below this line alone!
-# --------------------------------
-# I've called main() for you.
-# This line is a special way to call main
-# that allows me to test your code.  Do not change it!
+
 if __name__ == '__main__':
   main()
